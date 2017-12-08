@@ -5,7 +5,6 @@ import os
 
 appid1 = os.getenv('appid1')
 appid2 = os.getenv('appid2')
-user_agent = os.getenv('user_agent')
 referer = os.getenv('referer_hostloc')
 
 
@@ -19,7 +18,7 @@ def hostloc():
     urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(i)) for i in range(10000, 24000)]
     for i in urls:
       s.get(i)
-      time.sleep(3)
+      sleep(3)
     
 if __name__ == '__main__':
     hostloc()
