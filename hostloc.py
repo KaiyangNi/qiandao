@@ -13,8 +13,6 @@ def hostloc():
     session = requests.Session()
     session.headers.update(headers)
     
-    import requests
-    import time 
     s = requests.Session()
     s.post("http://www.hostloc.com/member.php", {'username':appid1, 'password':appid2,})
     urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(i)) for i in range(10000, 24000)]
