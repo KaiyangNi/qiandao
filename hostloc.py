@@ -3,6 +3,7 @@
 import requests
 import time
 import os
+import random
 
 appid1 = os.getenv('appid1')
 appid2 = os.getenv('appid2')
