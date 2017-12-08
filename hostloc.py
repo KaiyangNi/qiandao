@@ -14,7 +14,7 @@ def hostloc():
     
     s = requests.Session()
     s.post("http://www.hostloc.com/member.php", {'username':appid1, 'password':appid2,})
-    urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(i)) for i in range(10000, 24000)]
+    urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(i)) for i in random.randrange(10000, 25000) for _ in range(12)]
     for i in urls:
       s.get(i)
       time.sleep(3)
