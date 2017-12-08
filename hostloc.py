@@ -7,6 +7,8 @@ import random
 
 appid1 = os.getenv('appid1')
 appid2 = os.getenv('appid2')
+appid3 = os.getenv('appid3')
+appid4 = os.getenv('appid4')
 
 def hostloc():
     headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'Referer':'http://www.hostloc.com'}
