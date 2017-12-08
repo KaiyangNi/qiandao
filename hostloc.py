@@ -13,7 +13,7 @@ def hostloc():
     session.headers.update(headers)
     
     s = requests.Session()
-    s.post("http://www.hostloc.com/member.php", {'username':appid1, 'password':appid2,})
+    s.post("http://www.hostloc.com/member.php", {'username':appid1, 'password':appid2})
     random.randrange(10000, 25000)
     urls = ["http://www.hostloc.com/space-uid-{}.html". for i in range(12)]
     for i in urls:
