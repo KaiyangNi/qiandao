@@ -15,10 +15,11 @@ def hostloc():
     
     s = requests.Session()
     s.post("http://www.hostloc.com/member.php", {'username':appid1, 'password':appid2})
-    urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(random.randrange(1, 50000))) for i in range(12)]
+    urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(random.randrange(10000, 25000))) for i in range(12)]
     for i in urls:
       s.get(i)
-      time.sleep(2)
+      print(i)
+      time.sleep(1)
     
 if __name__ == '__main__':
     hostloc()
