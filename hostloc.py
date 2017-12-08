@@ -5,11 +5,12 @@ import os
 
 appid1 = os.getenv('appid1')
 appid2 = os.getenv('appid2')
-token = os.getenv('token')
+user_agent = os.getenv('user_agent')
+referer = os.getenv('referer_hostloc')
 
 
 def hostloc():
-    headers = {'Authorization': token}
+    headers = {"User-Agent": user_agent, 'Referer':referer}
     session = requests.Session()
     session.headers.update(headers)
     
