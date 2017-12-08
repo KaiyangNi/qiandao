@@ -20,7 +20,8 @@ def hostloc():
       s.get(i)
       print(i)
         
-    s.post("http://www.hostloc.com/member.php?mod=logging&action=logout")
+    s.get("http://www.hostloc.com/member.php?mod=logging&action=logout")
+    
     s.post("http://www.hostloc.com/member.php?mod=logging&action=login", {'username':appid3, 'password':appid4})
     urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(random.randrange(10000, 25000))) for i in range(12)]
     for i in urls:
