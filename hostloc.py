@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import requests
+import time
 import os
 
 appid1 = os.getenv('appid1')
@@ -16,7 +17,7 @@ def hostloc():
     urls = ["http://www.hostloc.com/space-uid-{}.html".format(str(i)) for i in range(10000, 24000)]
     for i in urls:
       s.get(i)
-      sleep(3)
+      time.sleep(3)
     
 if __name__ == '__main__':
     hostloc()
