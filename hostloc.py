@@ -18,6 +18,7 @@ def hostloc():
     urls = ["https://www.hostloc.com/space-uid-{}.html".format(str(random.randrange(10000, 25000))) for i in range(12)]
     for i in urls:
       s.get(i)
+      time.sleep(3)
       print(i)
         
     s2 = requests.Session()
@@ -26,6 +27,7 @@ def hostloc():
     urls = ["https://www.hostloc.com/space-uid-{}.html".format(str(random.randrange(10000, 25000))) for i in range(12)]
     for i in urls:
       s2.get(i)
+      time.sleep(3)
       print(i)
     
 if __name__ == '__main__':
